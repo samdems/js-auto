@@ -10,7 +10,7 @@ RUN apk add --no-cache \
     git
 
 COPY package.json /
-COPY index.js /
+COPY src /src
 RUN cd / && npm install --unsafe-perm
 
 COPY run.sh /

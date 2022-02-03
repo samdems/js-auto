@@ -3,11 +3,16 @@
   "version": "1.0.2",
   "description": "js auto",
   "author": "sam.cross <sam.cross@gmx.com>",
-  "main": "index.js",
+  "main": "./src/index.js",
+  "type": "module",
   "scripts": {
-    "start": "node index.js"
+    "start": "cd src && nodemon  --max_old_space_size=8048 ./index.js"
   },
   "dependencies": {
-    "express": "^4.17.2"
+    "@prisma/client": "^3.9.0",
+    "express": "^4.17.2",
+    "lowdb": "^3.0.0",
+    "node-json-db": "^1.4.1",
+    "nodemon": "^2.0.15"
   }
 }
